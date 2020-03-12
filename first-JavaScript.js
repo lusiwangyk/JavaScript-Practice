@@ -37,7 +37,6 @@ function myFunction()
     document.getElementById("demo").innerHTML = votable;
 
 }
-
 function myFunction()
 {
     var x="";

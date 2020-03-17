@@ -55,7 +55,7 @@ document.getElementById("demo").innerHTML =
     (123).toString() + "<br>" +
     (100 + 23).toString();
 
-*/
+
 
 function myFunction() {
     var y = "john";
@@ -64,3 +64,16 @@ function myFunction() {
     typeof x + "<br>" + x;
 
 }
+
+function myFunction() {
+    var str = "Vist    W3cSchool!";
+    var n = str.search(/w3cSchool/i);
+    document.getElementById("demo").innerHTML = n;
+
+}
+*/
+function myFunction() {
+    var str = document.getElementById("demo").innerHTML;
+    var txt = str.replace(/microsoft/i,"W3cSchool");
+    document.getElementById("demo").innerHTML = txt;
+}    

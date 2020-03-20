@@ -3,13 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript RE Practice</title>
+    <title>JavaScript Practice</title>
 </head>
 <body>
-    <p>replace "microsoft" to "W3cSchool"</p>
-    <button onclick="myFunction()">Click Here</button>
-    <p id="demo">Please visit Microsoft!</p>
+     
+    <script type="text/JavaScript">
 
-    <script src="second-JavaScript.js"></script>
+        var bandArray = ["beatles", "green day", "black sabbath", "red hot chili peppers", "rolling stones"];
+        var yourAnswer = prompt("What's your favourite band?");
+        yourAnswer = yourAnswer.toLowerCase();
+        
+
+        if(bandArray.indexOf(yourAnswer) >= 0 && bandArray.indexOf(yourAnswer) <= 4) {
+            alert("YEAH I LOVE THEM!");
+        }
+        
+        else {
+            alert("Nah. They're pretty lame.");
+        }
+    
+    
+    </script>
 </body>
 </html>

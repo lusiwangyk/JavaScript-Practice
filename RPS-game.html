@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS (rock paper scissors)Game</title>
+</head>
+<body>
+    <script>
+        var win = 0;
+        var lose = 0;
+        var tie = 0;
+        var rps = ["r", "p", "s"];
+
+        for (var i = 0; i < 10; i++) {
+
+            var myChoice = prompt("Choose one of 'r' ,'p' or 's' to play the game.")
+            var computerChoice = rps[Math.floor(Math.random() * rps.length)];
+            if (myChoice == computerChoice) {
+                alert("It's a tie.");
+                tie++;
+            }
+            else if (myChoice == "r" && computerChoice == "p") {
+                alert("You lose!");
+                lose++;
+            }
+            else if (myChoice == "r" && computerChoice == "s") {
+                alert("You win!!");
+                win++;
+            }
+            else if (myChoice == "p" && computerChoice == "s") {
+                alert("You lose!");
+                lose++;
+            }
+            else if (myChoice == "p" && computerChoice == "r") {
+                alert("You win!!");
+                win++;
+            }
+            else if (myChoice == "s" && computerChoice == "r") {
+                alert("You lose!");
+                lose++;
+            }
+            else if (myChoice == "s" && computerChoice == "p") {
+                alert("You win!!");
+                win++;
+            }
+
+        }
+
+        alert ("Win: " + win + "; " + "Tie: " + lose + "; " + "Lose: " + lose + "; ");
+
+        
+    </script>
+    
+</body>
+</html>

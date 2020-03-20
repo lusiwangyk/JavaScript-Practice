@@ -71,9 +71,10 @@ function myFunction() {
     document.getElementById("demo").innerHTML = n;
 
 }
-*/
+
 function myFunction() {
     var str = document.getElementById("demo").innerHTML;
     var txt = str.replace(/microsoft/i,"W3cSchool");
     document.getElementById("demo").innerHTML = txt;
 }    
+*/

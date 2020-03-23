@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question game Practice</title>
+</head>
+<body>
+    <script>
+        var score = 0;
+        confirm("Please answer 't' or 'f' to answer the questions");
+        var questionArray = [
+            { q: "The Great Wall is in China", a: "t"},
+            { q: "There are three colors in traffic lights ", a : "t"},
+            { q: "If you freeze water, you can get ice" , a: "t"},
+            { q: "The President of the United States lives in the Black House", a :"f"},
+            { q: "we go trick-or-treating in Thanksgiving", a: "f"},
+            { q: "There are 360 days in a year", a: "f"},
+            { q: "Honey is made by bees", a: "t"},
+            { q: "The Great Pyramid of Giza is in New York", a: "f"},
+        ]
+       
+        /*function askQuestion(question) {
+            return question.q ;
+        
+        }
+        console.log(questionArray.find(askQuestion)); */
+        for (var i = 0; i < questionArray.length; i++) {
+            var answer = prompt(questionArray[i].q);
+            if (answer === questionArray[i].a) {
+                alert("You are right!");
+                score ++;
+            }
+            else {
+                alert("Think about it next time.");
+            }
+
+        }
+        alert("scores: " + score);
+
+
+
+    </script>
+    
+</body>
+</html>
